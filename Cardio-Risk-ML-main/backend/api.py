@@ -11,7 +11,9 @@ import os
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for frontend communication
-
+@app.route("/")
+def home():
+    return "Cardio Risk Backend Running 🚀"
 # Load the trained XGBoost model
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "cardio_model.pkl")
 
