@@ -3,3 +3,4 @@ flask-cors
 numpy
 xgboost
 scikit-learn
+gunicorn
